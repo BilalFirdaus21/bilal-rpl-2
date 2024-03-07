@@ -1,0 +1,601 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* ============================================= */
+/* =========== HALAMAN LOGIN REGISTER ========== */
+/* ============================================= */
+
+.login-register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: skyblue;
+    background-size: cover;
+    background-position: center;
+}
+
+.login-register fieldset {
+    background-color: #ffff;
+    display: flex;
+    width: 250px;
+    flex-direction: column;
+    padding: 18px;
+    gap: 10px;
+    border: 1pxx solid #fff;
+    border-radius: 7px;
+}
+
+.login-register h1 {
+    color: black;
+    text-align: center;
+}
+
+.login-register h2 {
+    margin-top: -5px;
+    margin-bottom: 12px;
+    color: black;
+    text-align: center;
+}
+
+.login-register input {
+    padding: 5px;
+    border: 3px solid;
+    outline: none;
+    border-radius: 3px;
+}
+
+.login-register select {
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.login-register button {
+    padding: 6px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #427d9d;
+    color: #fff;
+    letter-spacing: 1.2px;
+    transition: 0.3s;
+}
+
+.login-register button:hover {
+    background-color: #ddf2fd;
+    color: #27374d;
+}
+
+.login-register #level {
+    text-align: left;
+    color: #fff;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.login-register span {
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.login-register a {
+    color: #dde6ed;
+    text-decoration: none;
+}
+
+/* ============================================= */
+/* ====== HALAMAN HOMEPAGE ADMIN PETUGAS ======= */
+/* ============================================= */
+
+.admin-petugas {
+    display: flex;
+    flex-direction: row;
+}
+
+.admin-petugas .sidebar {
+    background-color: #EE4266;
+    width: auto;
+    padding: 25px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.admin-petugas .sidebar h4 {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background-color: #526d82;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.admin-petugas .sidebar a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    outline: none;
+}
+
+.admin-petugas .sidebar #logout {
+    bottom: 20px;
+    position: absolute;
+    font-weight: bold;
+
+}
+
+.admin-petugas .sidebar a:hover {
+    font-weight: bold;
+}
+
+.admin-petugas .display {
+    width: 83%;
+    padding: 10px;
+    /* background-color: yellow; */
+}
+
+.admin-petugas #title-txt {
+    background-color: skyblue;
+    padding: 15px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.admin-petugas .report-container {
+    /* background-color: yellow;s */
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.admin-petugas .mini-box {
+    background-color: lightskyblue;
+    color: #fff;
+    padding: 15px;
+    align-items: flex-start;
+    border-radius: 5px;
+}
+
+.admin-petugas #user {
+    margin-top: 15px;
+    border: 1px solid #9db2bf;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-petugas #user tr>th {
+    padding: 15px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.admin-petugas #user tr>td {
+    padding: 15px 10px;
+    border: 1px solid #9db2bf;
+}
+
+/* ============================================= */
+/* ========= HALAMAN DATA BUKU ADTUGAS ========= */
+/* ============================================= */
+
+.admin-petugas .display>#sub-txt {
+    background-color: lightgray;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.admin-petugas #form {
+    width: 50%;
+    font-weight: bold
+}
+
+.admin-petugas #form tr>td {
+    padding: 3px;
+    /* border: 1px solid #000; */
+}
+
+.admin-petugas #form input,
+textarea {
+    width: 96%;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #61677a;
+    outline: none;
+}
+
+.admin-petugas #form select {
+    width: 99%;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #61677a;
+    outline: none;
+}
+
+.admin-petugas #form textarea {
+    height: 100px;
+    border-radius: 3px;
+    border: 1px solid #61677a;
+    outline: none;
+}
+
+.admin-petugas #form input[type="submit"] {
+    padding: 8px 20px;
+    border: none;
+    width: 50%;
+    border-radius: 5px;
+    outline: none;
+    background-color: #427d9d;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.admin-petugas #form a {
+    padding: 8px 20px;
+    text-decoration: none;
+    font-size: 13px;
+    border: none;
+    /* width: 48.5%; */
+    border-radius: 5px;
+    outline: none;
+    background-color: #427d9d;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.admin-petugas #form input[type=submit]:hover,
+.admin-petugas #form a:hover {
+    background-color: #ff9524;
+}
+
+.admin-petugas .wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* background-color: #969696; */
+    height: 400px;
+    align-items: flex-start;
+    padding: 20px;
+    overflow-y: scroll;
+    gap: 35px;
+}
+
+.admin-petugas .wrap fieldset {
+    width: 40%;
+    padding: 10px;
+    border-radius: 10px;
+    /* height: 170px; */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 15px;
+    border: 1px solid #9db2bf;
+}
+
+.admin-petugas .wrap img {
+    width: 25%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.admin-petugas .wrap table tr>td {
+    padding: 3px 0;
+    font-size: 14px;
+}
+
+.admin-petugas .wrap table tr>#label {
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+.admin-petugas .wrap table tr>td a {
+    padding: 5px 15px;
+    margin-right: 5px;
+    color: #fff;
+    float: right;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-weight: bold;
+    /* text-align: right; */
+}
+
+.admin-petugas .wrap table tr>td #action-btn1 {
+    background-color: #ff9524;
+}
+
+.admin-petugas .wrap table tr>td #action-btn2 {
+    background-color: #427d9d;
+}
+
+/* ============================================= */
+/* ======== HALAMAN DETAIL BUKU ADTUGAS ======== */
+/* ============================================= */
+
+.admin-petugas .detail {
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    /* height: 170px; */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.admin-petugas .detail fieldset {
+    width: 40%;
+    padding: 10px;
+    border-radius: 10px;
+    /* height: 170px; */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 15px;
+    border: 1px solid #9db2bf;
+    /* margin-bottom: 150px; */
+}
+
+.admin-petugas .detail img {
+    width: 25%;
+    border-radius: 10px 0 0 10px;
+}
+
+.admin-petugas .detail table tr>td {
+    padding: 3px 0;
+    font-size: 17px;
+}
+
+.admin-petugas .detail table tr>#label {
+    font-weight: bold;
+    padding-right: 15px;
+}
+
+.admin-petugas .detail table tr>td a {
+    padding: 5px 15px;
+    margin-right: 5px;
+    color: #fff;
+    float: right;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-weight: bold;
+    /* text-align: right; */
+}
+
+.admin-petugas .detail table tr>td #action-btn1 {
+    background-color: #ff9524;
+}
+
+.admin-petugas .detail table tr>td #action-btn2 {
+    background-color: #427d9d;
+}
+
+.admin-petugas #txt-info{
+    /* background-color: red; */
+    /* padding-top: 20px; */
+    font-style: italic;
+}
+
+.admin-petugas #back-txt{
+    text-decoration: none;
+    color: #fff;
+    background-color: #164863;
+    border-radius: 5px;
+    padding: 5px 7px;
+    font-size: 13px;
+}
+
+/* ============================================= */
+/* ======= HALAMAN KATEGORI BUKU ADTUGAS ======= */
+/* ============================================= */
+
+.admin-petugas #data {
+    margin-top: 20px;
+    margin-left: 15px;
+    border-collapse: collapse;
+    width: 98%;
+}
+.admin-petugas #form tr>td button {
+    padding: 8px 20px;
+    border: none;
+    /* width: 50%; */
+    border-radius: 5px;
+    outline: none;
+    background-color: #427d9d;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.admin-petugas #form a {
+    padding: 8px 20px;
+    text-decoration: none;
+    font-size: 13px;
+    border: none;
+    /* width: 48.5%; */
+    border-radius: 5px;
+    outline: none;
+    background-color: #427d9d;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.admin-petugas #form input[type=submit]:hover,
+.admin-petugas #form button:hover {
+    background-color: #ff9524;
+}
+
+.admin-petugas #data tr>th {
+    border: 1px solid #9db2bf;
+    padding: 15px 25px;
+    background-color: green;
+    color: #fff;
+}
+
+.admin-petugas #data tr>td {
+    border: 1px solid #9db2bf;
+    text-align: center;
+    padding: 7px;
+}
+
+.admin-petugas #data tr>td button {
+    border: 1px solid #ff9524;
+    background: #ff9524 no-repeat 5px 4px;
+    padding: 10px 10px 12px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+/* ============================================= */
+/* ========== HALAMAN REPORT ADTUGAS =========== */
+/* ============================================= */
+
+.admin-petugas .report-txt {
+    padding: 10px;
+    border: 1px solid #9db2bf;
+    border-radius: 10px;
+}
+
+.admin-petugas ol {
+    margin-left: 20px;
+}
+
+.admin-petugas ol>li {
+    padding-bottom: 5px;
+}
+
+.admin-petugas ol>li span {
+    color: #427d9d;
+    font-weight: bold;
+}
+
+.admin-petugas ol>li a {
+    padding: 3px 7px;
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    background-color: #427d9d;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ============================================= */
+/* =========== HALAMAN PRINT ADTUGAS =========== */
+/* ============================================= */
+
+.admin-petugas #report {
+    width: 100%;
+    border: 1px solid #9db2bf;
+    border-collapse: collapse;
+}
+
+.admin-petugas #report tr>th {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #9db2bf;
+    background-color: #164863;
+    /* border-radius: 5px ; */
+    color: #fff;
+}
+
+.admin-petugas #report tr>td {
+    padding: 10px;
+    border: 1px solid #9db2bf;
+}
+
+.admin-petugas #report tr>td #action {
+    text-decoration: none;
+    font-weight: bold;
+    color: #526d82;
+    /* text-align: center; */
+}
+
+/* ============================================= */
+/* ========== HALAMAN GENERATE ADTUGAS ========= */
+/* ============================================= */
+
+.report-admin-petugas {
+    /* background-color: #d8d9da; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+}
+
+.report-admin-petugas h3 {
+    margin-bottom: 25px;
+}
+
+.report-admin-petugas #generate-report {
+    /* display: inline-block; */
+    width: 70%;
+    border: 1px solid #9db2bf;
+    border-collapse: collapse;
+}
+
+.report-admin-petugas #generate-report tr>th {
+    text-align: center;
+    border: 1px solid #9db2bf;
+    padding: 10px;
+    background-color: #61677a;
+    color: #fff;
+}
+
+.report-admin-petugas #generate-report tr>td {
+    text-align: center;
+    border: 1px solid #9db2bf;
+    padding: 7px;
+}
+
+.report-admin-petugas #generate-report tr>#count {
+    text-align: left;
+    border: 1px solid #9db2bf;
+    padding: 7px;
+    font-weight: bold;
+}
+
+.report-admin-petugas #back-btn{
+    position: absolute;
+    left: 20px;    
+    background-color: #526d82;
+    padding: 5px 10px;
+    border-radius: 7%;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media print{
+    #back-btn{
+        display: none;
+    }
+}
